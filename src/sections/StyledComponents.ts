@@ -29,7 +29,7 @@ const Container = styled('div', { name: 'calculator' })`
       display: flex;
       align-items: center;
       justify-content: space-between;
-      
+
       svg {
         fill: white;
       }

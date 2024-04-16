@@ -1,8 +1,9 @@
+import calculatorStore from '@sections/components/MobXBody/CalculatorStore';
+import keys, { operators } from '@sections/CONSTS';
 import { useObserver } from 'mobx-react-lite';
 import React from 'react';
+
 import CalculatorButton from '../../../../../components/CalculatorButton';
-import calculatorStore from "@sections/components/MobXBody/CalculatorStore";
-import keys, {operators} from "@sections/CONSTS";
 
 const Keyboard = () => {
   return useObserver(() => {

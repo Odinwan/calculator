@@ -1,9 +1,8 @@
+import calculatorStore from '@sections/components/MobXBody/CalculatorStore';
 import { useObserver } from 'mobx-react-lite';
 import React from 'react';
-import calculatorStore from "@sections/components/MobXBody/CalculatorStore";
 
 const Window = () => {
-
   return useObserver(() => {
     const { windowType, history, current } = calculatorStore;
 

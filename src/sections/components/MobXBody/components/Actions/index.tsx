@@ -4,10 +4,9 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import HistoryIcon from '@mui/icons-material/History';
 import { Tooltip } from '@mui/material';
 import IconButton from '@mui/material/IconButton';
+import calculatorStore from '@sections/components/MobXBody/CalculatorStore';
 import { useObserver } from 'mobx-react-lite';
 import React from 'react';
-import calculatorStore from "@sections/components/MobXBody/CalculatorStore";
-
 
 const Actions = () => {
   return useObserver(() => {

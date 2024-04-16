@@ -1,10 +1,10 @@
 import './index.css';
 
+import App from '@sections/index';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 import reportWebVitals from './reportWebVitals';
-import App from '@sections/index';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 
