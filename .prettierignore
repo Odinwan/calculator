@@ -1,0 +1,19 @@
+public
+.env
+.gitattributes
+yarn.lock
+.prettierignore
+craco.config.js
+# Игнорировать все файлы в директории node_modules
+node_modules/
+
+# Игнорировать все файлы в директории build или dist (если у вас есть такая директория)
+build/
+
+# Игнорировать файлы с расширением .jpg, .jpeg, .png и .gif (если это не код)
+*.jpg
+*.jpeg
+*.png
+*.gif
+
+
