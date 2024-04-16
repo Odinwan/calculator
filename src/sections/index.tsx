@@ -1,11 +1,18 @@
 import React from 'react';
 
-function App() {
-  return (
-    <div className="App">
+import Body from './components/Body';
+import Container from './StyledComponents';
 
-    </div>
+const App = () => {
+  return (
+    <Container>
+      <div className="calculator">
+        <div className="header" />
+        <Body />
+        <div className="footer" />
+      </div>
+    </Container>
   );
-}
+};
 
 export default App;

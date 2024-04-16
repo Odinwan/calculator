@@ -1,15 +1,24 @@
+import { useObserver } from 'mobx-react-lite';
 import React from 'react';
-import Container from "./StyledComponents";
 
-function App() {
+import calculatorStore from '../../context/CalculatorStore';
+import Actions from './components/Actions';
+import Keyboard from './components/Keyboard';
+import Window from './components/Window';
+import Container from './StyledComponents';
+
+const Body = () => {
+  return useObserver(() => {
+    const { windowType } = calculatorStore;
+
     return (
-        <Container>
-            <div className="calculator">
-                <div className="header"></div>
-                <div className="footer"></div>
-            </div>
-        </Container>
+      <Container isHistory={windowType === 'history'}>
+        <Window />
+        <Actions />
+        <Keyboard />
+      </Container>
     );
-}
+  });
+};
 
-export default App;
+export default Body;

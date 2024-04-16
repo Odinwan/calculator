@@ -1,26 +1,42 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
+    "target": "ESNext",
+    // указывает на какую версию js нужно компилировать
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    // позволяет использовать методы массивов и объектов
+    "allowJs": false,
+    // позволяет импортировать js файлы
+    "skipLibCheck": false,
+    // не проверять типы в файле node_modules
+    "esModuleInterop": false,
+    // позволяет использовать export default
     "allowSyntheticDefaultImports": true,
-    "strict": true,
+    // позволяет использовать export default
+    "strict": false,
+    // не допускает использование any
     "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
-    "moduleResolution": "node",
+    // не допускает использование разных регистров при импорте одного и того же файла
+    "module": "ESNext",
+    // позволяет использовать import/export
+    "moduleResolution": "Node",
+    // позволяет импортировать модули без указания расширения
     "resolveJsonModule": true,
+    // позволяет импортировать json как модуль
     "isolatedModules": true,
+    // не компилировать все файлы, а только те, которые изменились
     "noEmit": true,
-    "jsx": "react-jsx"
+    // не создавать файлы при компиляции
+    "baseUrl": "./src",
+    // это путь к папке client
+    "paths": {
+      "@sections/*": ["sections/*"]
+      // это путь к папке с страницами
+    },
+    "jsx": "react",
+    // позволяет использовать jsx синтаксис в tsx файлах
+    "types": ["react", "react-dom"]
+    // позволяет использовать типы react и react-dom
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src"]
+  // путь к папке с исходниками проекта (client) для компиляции в js
 }
