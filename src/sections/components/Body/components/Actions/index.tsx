@@ -11,7 +11,7 @@ import calculatorStore from '../../../../context/CalculatorStore';
 
 const Actions = () => {
   return useObserver(() => {
-    const { windowType, history, current } = calculatorStore;
+    const { windowType } = calculatorStore;
     const toolTipTypeText = windowType === 'calculator' ? 'История' : 'Калькулятор';
 
     return (

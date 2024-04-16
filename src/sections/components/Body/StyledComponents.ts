@@ -24,9 +24,9 @@ const Container = styled('div', { name: 'body__calculator' })`
     flex-direction: column;
     justify-content: flex-end;
     overflow: scroll;
-    -webkit-box-shadow: 0px 14px 24px -3px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 14px 24px -3px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 14px 24px -3px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0 14px 24px -3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0 14px 24px -3px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 14px 24px -3px rgba(0, 0, 0, 0.75);
 
     .history {
       display: grid;
