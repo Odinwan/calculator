@@ -7,7 +7,7 @@ import React, { useState } from 'react';
 import Container from './StyledComponents';
 
 const App = () => {
-  const [isMobX, setIsMobX] = useState<boolean>(false);
+  const [isMobX, setIsMobX] = useState<boolean>(true);
   const handleSwitchState = () => setIsMobX((current) => !current);
 
   return (
