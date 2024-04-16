@@ -81,7 +81,7 @@ class UseCreateEditModal<T> {
         }
 
         this.isLoading[1].next(true)
-        await this.collector.Save(actionType, item).then((r) => {
+        await this.collector.Save(actionType, item).then(() => {
             this.settings[1].getValue().onSuccess();
             this.isLoading[1].next(false);
         });

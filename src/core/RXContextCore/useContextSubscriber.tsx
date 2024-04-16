@@ -2,7 +2,6 @@ import { BehaviorSubject } from 'rxjs';
 
 import { useSubscriber } from './index';
 import { FieldContext, SetterContext, StateUpdater } from './types';
-import {useEffect} from "react";
 
 type ResetState = 'clearWithLocalStore' | 'default';
 
