@@ -6,8 +6,8 @@ import { Tooltip } from '@mui/material';
 import IconButton from '@mui/material/IconButton';
 import { useObserver } from 'mobx-react-lite';
 import React from 'react';
+import calculatorStore from "@sections/components/MobXBody/CalculatorStore";
 
-import calculatorStore from '../../../../context/CalculatorStore';
 
 const Actions = () => {
   return useObserver(() => {

@@ -1,6 +1,6 @@
 import { makeAutoObservable } from 'mobx';
+import {CalculatorInterface, HistoryItem, WindowType} from "@sections/types";
 
-import { CalculatorInterface, HistoryItem, WindowType } from './types';
 
 class CalculatorStore implements CalculatorInterface {
   current = '0';

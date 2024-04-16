@@ -5,6 +5,8 @@ module.exports = {
         devtool: 'source-map',
         alias: {
             '@sections': path.resolve(__dirname, './src/sections'),
+            '@core': path.resolve(__dirname, './src/core'),
+            '@settings': path.resolve(__dirname, './src/settings'),
         },
         configure: (webpackConfig) => {
             // Установите желаемое имя для файла bundle.js

@@ -1,13 +1,13 @@
 import { useObserver } from 'mobx-react-lite';
 import React from 'react';
 
-import calculatorStore from '../../context/CalculatorStore';
 import Actions from './components/Actions';
 import Keyboard from './components/Keyboard';
 import Window from './components/Window';
 import Container from './StyledComponents';
+import calculatorStore from "@sections/components/MobXBody/CalculatorStore";
 
-const Body = () => {
+const MobXBody = () => {
   return useObserver(() => {
     const { windowType } = calculatorStore;
 
@@ -21,4 +21,4 @@ const Body = () => {
   });
 };
 
-export default Body;
+export default MobXBody;
